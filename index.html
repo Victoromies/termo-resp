@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Termo de Responsabilidade</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1, h2 { text-align: center; color: #333; }
+        .section { margin-bottom: 25px; border: 1px solid #ddd; padding: 20px; border-radius: 6px; }
+        .section h3 { margin-top: 0; color: #555; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .field { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #666; }
+        input[type="text"], textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        textarea { resize: vertical; }
+        .button-container { text-align: center; margin-top: 30px; }
+        button { padding: 12px 25px; font-size: 16px; color: #fff; background-color: #007bff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }
+        button:hover { background-color: #0056b3; }
+        .signature-pad { border: 1px solid #000; background-color: #fff; margin-bottom: 10px; cursor: crosshair; }
+        .signature-buttons { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Termo de Responsabilidade, Confidencialidade e Conformidade de Segurança da Informação para Prestadores de Serviço em Áreas Seguras</h1>
+        <h2>(Baseado na norma ABNT NBR ISO/IEC 27001)</h2>
+
+        <!-- 1. PARTES ENVOLVIDAS -->
+        <div class="section">
+            <h2>1. PARTES ENVOLVIDAS</h2>
+            <p><strong>CONTRATANTE:</strong></p>
+            <p><strong>Nome da Empresa:</strong> OMIEXPERIENCE<br>
+            <strong>Endereço:</strong> Av. Jurubatuba, 460 – Vila Cordeiro</p>
+
+            <h3>CONTRATADA (FORNECEDOR):</h3>
+            <div class="field">
+                <label for="contratada-empresa">Nome da Empresa:</label>
+                <input type="text" id="contratada-empresa" name="contratada-empresa">
+            </div>
+            <div class="field">
+                <label for="contratada-tecnico">Nome do Técnico:</label>
+                <input type="text" id="contratada-tecnico" name="contratada-tecnico">
+            </div>
+            <div class="field">
+                <label for="contratada-cpf">CPF/PASSAPORTE:</label>
+                <input type="text" id="contratada-cpf" name="contratada-cpf">
+            </div>
+
+            <h3>SERVIÇO A SER EXECUTADO:</h3>
+            <div class="field">
+                <label for="servico-descricao">Descrição do Serviço:</label>
+                <textarea id="servico-descricao" name="servico-descricao" rows="4"></textarea>
+            </div>
+            <div class="field">
+                <label for="servico-os">Ordem de Serviço (OS) nº, se aplicável:</label>
+                <input type="text" id="servico-os" name="servico-os">
+            </div>
+            <div class="field">
+                <label for="servico-data">Data(s) da Execução:</label>
+                <input type="text" id="servico-data" name="servico-data" readonly>
+            </div>
+        </div>
+        
+        <!-- 2. OBJETIVO -->
+        <div class="section">
+            <h2>2. OBJETIVO</h2>
+            <p>Este Termo tem como objetivo estabelecer as regras e responsabilidades que a CONTRATADA e seus colaboradores devem seguir durante a prestação de serviços nas instalações da CONTRATANTE, em especial em áreas de segurança restrita como o Data Center, a fim de garantir a segurança física, lógica e a confidencialidade das informações, em conformidade com as políticas da CONTRATANTE e os princípios da norma ISO 27001.</p>
+        </div>
+
+        <!-- 3. CLÁUSULAS E RESPONSABILIDADES -->
+        <div class="section">
+            <h2>3. CLÁUSULAS E RESPONSABILIDADES</h2>
+            <h3>Cláusula 1ª - CONFIDENCIALIDADE E SIGILO (Ref. ISO 27001: A.6.6)</h3>
+            <p>A CONTRATADA e seus colaboradores comprometem-se a manter sigilo absoluto sobre toda e qualquer informação técnica, operacional, comercial ou de qualquer outra natureza a que tenham acesso visual ou direto durante a execução dos serviços. É expressamente proibido:</p>
+            <ul>
+                <li>a) Fotografar, filmar ou gravar áudio dentro do Data Center sem autorização prévia e por escrito.</li>
+                <li>b) Divulgar a terceiros a arquitetura, layout, modelos de equipamentos ou quaisquer outros detalhes da infraestrutura da CONTRATANTE.</li>
+                <li>c) Copiar, reter ou utilizar para qualquer outro fim as informações confidenciais da CONTRATANTE.</li>
+            </ul>
+            <h3>Cláusula 2ª - CONTROLE DE ACESSO FÍSICO (Ref. ISO 27001: A.7.2, A.7.6)</h3>
+            <p>O acesso ao Data Center é um privilégio, não um direito. A CONTRATADA e seus colaboradores deverão:</p>
+            <ul>
+                <li>a) Apresentar identificação válida e estar previamente autorizados pela CONTRATANTE.</li>
+                <li>b) Utilizar o crachá de visitante/terceiro em local visível durante todo o período de permanência.</li>
+                <li>c) Ser acompanhados por um colaborador autorizado da CONTRATANTE em tempo integral, salvo exceções formalmente aprovadas.</li>
+                <li>d) Acessar somente as áreas, racks e equipamentos estritamente necessários para a execução do serviço contratado.</li>
+            </ul>
+            <h3>Cláusula 3ª - CONDUTA E SEGURANÇA NO AMBIENTE (Ref. ISO 27001: A.7.8, A.7.11, A.7.12)</h3>
+            <p>Durante a execução dos serviços, a CONTRATADA se responsabiliza por:</p>
+            <ul>
+                <li>a) Não tocar, manusear, conectar ou desconectar qualquer equipamento, cabo ou dispositivo que não seja o objeto do serviço, sem a expressa autorização de um representante da CONTRATANTE.</li>
+                <li>b) Não introduzir no ambiente dispositivos de hardware não autorizados (ex: pen drives, notebooks pessoais, smartphones conectados à rede).</li>
+                <li>c) Zelar pela integridade dos ativos da CONTRATANTE, responsabilizando-se por quaisquer danos diretos ou indiretos causados por negligência, imprudência ou imperícia de seus colaboradores aos equipamentos (servidores, switches, etc.), infraestrutura (cabeamento, piso elevado, climatização) ou à continuidade das operações.</li>
+                <li>d) Deixar o local de trabalho limpo e organizado, removendo todos os detritos, embalagens e materiais não utilizados.</li>
+            </ul>
+            <h3>Cláusula 4ª - GESTÃO DE INCIDENTES (Ref. ISO 27001: A.5.24, A.5.26)</h3>
+            <p>Caso a CONTRATADA ou seus colaboradores causem, suspeitem ou identifiquem qualquer incidente de segurança (ex: desligamento acidental de um equipamento, dano a um cabo, comportamento anômalo de um sistema após a intervenção), deverão comunicar imediatamente o representante da CONTRATANTE que os acompanha. A omissão de um incidente será considerada uma violação grave deste termo.</p>
+            <h3>Cláusula 5ª - RESPONSABILIDADE CIVIL E CRIMINAL</h3>
+            <p>O descumprimento de qualquer cláusula deste Termo sujeitará a CONTRATADA e seus colaboradores às sanções contratuais, bem como à responsabilização civil por perdas e danos e à apuração de responsabilidade criminal, conforme a legislação vigente (incluindo a Lei Geral de Proteção de Dados - LGPD, se aplicável).</p>
+        </div>
+
+        <!-- 4. DECLARAÇÃO DE CIÊNCIA E ACORDO -->
+        <div class="section">
+            <h2>4. DECLARAÇÃO DE CIÊNCIA E ACORDO</h2>
+            <p>A empresa CONTRATADA declara, por meio de seu representante legal, que tem plena ciência das normas aqui estabelecidas e se responsabiliza integralmente pelos atos de seus colaboradores designados para a execução do serviço. O(s) colaborador(es) abaixo assinado(s) declara(m) ter lido, compreendido e concordado com todas as condições deste Termo.</p>
+
+            <div class="field">
+                <label for="local-data">Local e Data:</label>
+                <input type="text" id="local-data" name="local-data" readonly>
+            </div>
+            
+            <p><strong>Pela CONTRATADA:</strong> (NOME DA EMPRESA)</p>
+            <div class="field">
+                <label for="contratada-responsavel">Nome do tecnico responsável da Contratada</label>
+                <input type="text" id="contratada-responsavel" name="contratada-responsavel">
+            </div>
+            <div class="field">
+                <label for="colaborador-servico">Nome do Colaborador que executará o serviço</label>
+                <input type="text" id="colaborador-servico" name="colaborador-servico">
+            </div>
+            <p><strong>CPF/PASSAPORTE:</strong> [O valor será replicado do campo acima]</p>
+            <p><strong>Assinatura:</strong></p>
+            <canvas id="signature-contratada" class="signature-pad" width="400" height="200"></canvas>
+            <div class="signature-buttons">
+                <button id="clear-contratada">Limpar Assinatura</button>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>Pela CONTRATANTE:</strong></p>
+            <div class="field">
+                <label for="contratante-analista">Nome do Analista Responsável Pelo acompanhamento</label>
+                <input type="text" id="contratante-analista" name="contratante-analista">
+            </div>
+            <p><strong>Assinatura analista responsável:</strong></p>
+            <canvas id="signature-analista" class="signature-pad" width="400" height="200"></canvas>
+            <div class="signature-buttons">
+                <button id="clear-analista">Limpar Assinatura</button>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="gerarPDF()">Gerar e Salvar PDF</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        // Função para preencher a data local
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateField = document.getElementById('servico-data');
+            const now = new Date();
+            const formattedDate = `${now.getDate().toString().padStart(2, '0')}/${(now.getMonth() + 1).toString().padStart(2, '0')}/${now.getFullYear()}`;
+            dateField.value = formattedDate;
+
+            const localDataField = document.getElementById('local-data');
+            localDataField.value = `São Paulo, ${formattedDate}`;
+        });
+
+        // Lógica de Assinatura para o Contratado
+        const canvasContratada = document.getElementById('signature-contratada');
+        const ctxContratada = canvasContratada.getContext('2d');
+        let isDrawingContratada = false;
+        let lastXContratada = 0;
+        let lastYContratada = 0;
+
+        ctxContratada.strokeStyle = '#000';
+        ctxContratada.lineWidth = 2;
+        ctxContratada.lineJoin = 'round';
+        ctxContratada.lineCap = 'round';
+
+        function drawContratada(e) {
+            if (!isDrawingContratada) return;
+            const rect = canvasContratada.getBoundingClientRect();
+            const x = (e.clientX || e.touches[0].clientX) - rect.left;
+            const y = (e.clientY || e.touches[0].clientY) - rect.top;
+
+            ctxContratada.beginPath();
+            ctxContratada.moveTo(lastXContratada, lastYContratada);
+            ctxContratada.lineTo(x, y);
+            ctxContratada.stroke();
+            [lastXContratada, lastYContratada] = [x, y];
+        }
+
+        canvasContratada.addEventListener('mousedown', (e) => { isDrawingContratada = true; const rect = canvasContratada.getBoundingClientRect(); [lastXContratada, lastYContratada] = [(e.clientX - rect.left), (e.clientY - rect.top)]; });
+        canvasContratada.addEventListener('touchstart', (e) => { e.preventDefault(); isDrawingContratada = true; const rect = canvasContratada.getBoundingClientRect(); [lastXContratada, lastYContratada] = [(e.touches[0].clientX - rect.left), (e.touches[0].clientY - rect.top)]; });
+        canvasContratada.addEventListener('mousemove', drawContratada);
+        canvasContratada.addEventListener('touchmove', drawContratada);
+        canvasContratada.addEventListener('mouseup', () => isDrawingContratada = false);
+        canvasContratada.addEventListener('touchend', () => isDrawingContratada = false);
+        canvasContratada.addEventListener('mouseout', () => isDrawingContratada = false);
+
+        document.getElementById('clear-contratada').addEventListener('click', () => {
+            ctxContratada.clearRect(0, 0, canvasContratada.width, canvasContratada.height);
+        });
+
+        // Lógica de Assinatura para o Analista
+        const canvasAnalista = document.getElementById('signature-analista');
+        const ctxAnalista = canvasAnalista.getContext('2d');
+        let isDrawingAnalista = false;
+        let lastXAnalista = 0;
+        let lastYAnalista = 0;
+
+        ctxAnalista.strokeStyle = '#000';
+        ctxAnalista.lineWidth = 2;
+        ctxAnalista.lineJoin = 'round';
+        ctxAnalista.lineCap = 'round';
+
+        function drawAnalista(e) {
+            if (!isDrawingAnalista) return;
+            const rect = canvasAnalista.getBoundingClientRect();
+            const x = (e.clientX || e.touches[0].clientX) - rect.left;
+            const y = (e.clientY || e.touches[0].clientY) - rect.top;
+
+            ctxAnalista.beginPath();
+            ctxAnalista.moveTo(lastXAnalista, lastYAnalista);
+            ctxAnalista.lineTo(x, y);
+            ctxAnalista.stroke();
+            [lastXAnalista, lastYAnalista] = [x, y];
+        }
+
+        canvasAnalista.addEventListener('mousedown', (e) => { isDrawingAnalista = true; const rect = canvasAnalista.getBoundingClientRect(); [lastXAnalista, lastYAnalista] = [(e.clientX - rect.left), (e.clientY - rect.top)]; });
+        canvasAnalista.addEventListener('touchstart', (e) => { e.preventDefault(); isDrawingAnalista = true; const rect = canvasAnalista.getBoundingClientRect(); [lastXAnalista, lastYAnalista] = [(e.touches[0].clientX - rect.left), (e.touches[0].clientY - rect.top)]; });
+        canvasAnalista.addEventListener('mousemove', drawAnalista);
+        canvasAnalista.addEventListener('touchmove', drawAnalista);
+        canvasAnalista.addEventListener('mouseup', () => isDrawingAnalista = false);
+        canvasAnalista.addEventListener('touchend', () => isDrawingAnalista = false);
+        canvasAnalista.addEventListener('mouseout', () => isDrawingAnalista = false);
+
+        document.getElementById('clear-analista').addEventListener('click', () => {
+            ctxAnalista.clearRect(0, 0, canvasAnalista.width, canvasAnalista.height);
+        });
+        
+        async function gerarPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            // Textos longos para o PDF, divididos em blocos
+            const textoClausulas = [
+                {
+                    titulo: "Cláusula 1ª - CONFIDENCIALIDADE E SIGILO (Ref. ISO 27001: A.6.6)",
+                    paragrafos: [
+                        "A CONTRATADA e seus colaboradores comprometem-se a manter sigilo absoluto sobre toda e qualquer informação técnica, operacional, comercial ou de qualquer outra natureza a que tenham acesso visual ou direto durante a execução dos serviços. É expressamente proibido:",
+                        "a) Fotografar, filmar ou gravar áudio dentro do Data Center sem autorização prévia e por escrito.",
+                        "b) Divulgar a terceiros a arquitetura, layout, modelos de equipamentos ou quaisquer outros detalhes da infraestrutura da CONTRATANTE.",
+                        "c) Copiar, reter ou utilizar para qualquer outro fim as informações confidenciais da CONTRATANTE."
+                    ]
+                },
+                {
+                    titulo: "Cláusula 2ª - CONTROLE DE ACESSO FÍSICO (Ref. ISO 27001: A.7.2, A.7.6)",
+                    paragrafos: [
+                        "O acesso ao Data Center é um privilégio, não um direito. A CONTRATADA e seus colaboradores deverão:",
+                        "a) Apresentar identificação válida e estar previamente autorizados pela CONTRATANTE.",
+                        "b) Utilizar o crachá de visitante/terceiro em local visível durante todo o período de permanência.",
+                        "c) Ser acompanhados por um colaborador autorizado da CONTRATANTE em tempo integral, salvo exceções formalmente aprovadas.",
+                        "d) Acessar somente as áreas, racks e equipamentos estritamente necessários para a execução do serviço contratado."
+                    ]
+                },
+                {
+                    titulo: "Cláusula 3ª - CONDUTA E SEGURANÇA NO AMBIENTE (Ref. ISO 27001: A.7.8, A.7.11, A.7.12)",
+                    paragrafos: [
+                        "Durante a execução dos serviços, a CONTRATADA se responsabiliza por:",
+                        "a) Não tocar, manusear, conectar ou desconectar qualquer equipamento, cabo ou dispositivo que não seja o objeto do serviço, sem a expressa autorização de um representante da CONTRATANTE.",
+                        "b) Não introduzir no ambiente dispositivos de hardware não autorizados (ex: pen drives, notebooks pessoais, smartphones conectados à rede).",
+                        "c) Zelar pela integridade dos ativos da CONTRATANTE, responsabilizando-se por quaisquer danos diretos ou indiretos causados por negligência, imprudência ou imperícia de seus colaboradores aos equipamentos (servidores, switches, etc.), infraestrutura (cabeamento, piso elevado, climatização) ou à continuidade das operações.",
+                        "d) Deixar o local de trabalho limpo e organizado, removendo todos os detritos, embalagens e materiais não utilizados."
+                    ]
+                },
+                {
+                    titulo: "Cláusula 4ª - GESTÃO DE INCIDENTES (Ref. ISO 27001: A.5.24, A.5.26)",
+                    paragrafos: [
+                        "Caso a CONTRATADA ou seus colaboradores causem, suspeitem ou identifiquem qualquer incidente de segurança (ex: desligamento acidental de um equipamento, dano a um cabo, comportamento anômalo de um sistema após a intervenção), deverão comunicar imediatamente o representante da CONTRATANTE que os acompanha. A omissão de um incidente será considerada uma violação grave deste termo."
+                    ]
+                },
+                {
+                    titulo: "Cláusula 5ª - RESPONSABILIDADE CIVIL E CRIMINAL",
+                    paragrafos: [
+                        "O descumprimento de qualquer cláusula deste Termo sujeitará a CONTRATADA e seus colaboradores às sanções contratuais, bem como à responsabilização civil por perdas e danos e à apuração de responsabilidade criminal, conforme a legislação vigente (incluindo a Lei Geral de Proteção de Dados - LGPD, se aplicável)."
+                    ]
+                }
+            ];
+
+            // Variáveis do formulário
+            const nomeEmpresaContratada = document.getElementById('contratada-empresa').value;
+            const nomeTecnico = document.getElementById('contratada-tecnico').value;
+            const cpfPassaporte = document.getElementById('contratada-cpf').value;
+            const descricaoServico = document.getElementById('servico-descricao').value;
+            const ordemServico = document.getElementById('servico-os').value;
+            const dataExecucao = document.getElementById('servico-data').value;
+            const nomeTecnicoResponsavel = document.getElementById('contratada-responsavel').value;
+            const nomeColaborador = document.getElementById('colaborador-servico').value;
+            const nomeAnalistaContratante = document.getElementById('contratante-analista').value;
+            const localData = document.getElementById('local-data').value;
+
+            function adicionarCabecalho(doc) {
+                // Adiciona o logo a partir do arquivo local
+                doc.addImage('logo.png', 'PNG', 160, 10, 30, 15);
+                doc.setFontSize(18);
+                doc.text("Termo de Responsabilidade e Confidencialidade", 10, 15);
+                doc.setFontSize(12);
+                doc.setDrawColor(0);
+                doc.line(10, 25, 200, 25);
+            }
+
+            adicionarCabecalho(doc);
+            let y = 30;
+
+            // 1. PARTES ENVOLVIDAS
+            doc.setFontSize(16);
+            doc.text("1. PARTES ENVOLVIDAS", 10, y);
+            y += 10;
+            doc.setFontSize(12);
+            doc.text("CONTRATANTE:", 15, y); y += 6;
+            doc.text("Nome da Empresa: OMIEXPERIENCE", 20, y); y += 6;
+            doc.text("Endereço: Av. Jurubatuba, 460 – Vila Cordeiro", 20, y); y += 12;
+
+            doc.text("CONTRATADA (FORNECEDOR):", 15, y); y += 6;
+            doc.text(`Nome da Empresa: ${nomeEmpresaContratada}`, 20, y); y += 6;
+            doc.text(`Nome do Técnico: ${nomeTecnico}`, 20, y); y += 6;
+            doc.text(`CPF/PASSAPORTE: ${cpfPassaporte}`, 20, y); y += 12;
+
+            doc.text("SERVIÇO A SER EXECUTADO:", 15, y); y += 6;
+            doc.text(`Descrição do Serviço: ${descricaoServico}`, 20, y); y += 6;
+            doc.text(`Ordem de Serviço (OS) nº, se aplicável: ${ordemServico}`, 20, y); y += 6;
+            doc.text(`Data(s) da Execução: ${dataExecucao}`, 20, y); y += 12;
+
+            // 2. OBJETIVO
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.setFontSize(16);
+            doc.text("2. OBJETIVO", 10, y);
+            y += 10;
+            doc.setFontSize(12);
+            const objetivoText = doc.splitTextToSize("Este Termo tem como objetivo estabelecer as regras e responsabilidades que a CONTRATADA e seus colaboradores devem seguir durante a prestação de serviços nas instalações da CONTRATANTE, em especial em áreas de segurança restrita como o Data Center, a fim de garantir a segurança física, lógica e a confidencialidade das informações, em conformidade com as políticas da CONTRATANTE e os princípios da norma ISO 27001.", 180);
+            doc.text(objetivoText, 15, y);
+            y += doc.getTextDimensions(objetivoText).h + 5;
+
+            // 3. CLÁUSULAS E RESPONSABILIDADES
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.setFontSize(16);
+            doc.text("3. CLÁUSULAS E RESPONSABILIDADES", 10, y);
+            y += 10;
+            
+            // Adicionar cláusulas dinamicamente
+            textoClausulas.forEach(clausula => {
+                if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+                doc.setFontSize(14);
+                doc.text(clausula.titulo, 15, y);
+                y += 5;
+                doc.setFontSize(12);
+                clausula.paragrafos.forEach(paragrafo => {
+                    const textoSplit = doc.splitTextToSize(paragrafo, 180);
+                    doc.text(textoSplit, 20, y);
+                    y += doc.getTextDimensions(textoSplit).h + 3;
+                    if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+                });
+                y += 5;
+            });
+            
+            // 4. DECLARAÇÃO DE CIÊNCIA E ACORDO
+            if (y > 200) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.setFontSize(16);
+            doc.text("4. DECLARAÇÃO DE CIÊNCIA E ACORDO", 10, y);
+            y += 10;
+            doc.setFontSize(12);
+            const declaracaoTexto = doc.splitTextToSize("A empresa CONTRATADA declara, por meio de seu representante legal, que tem plena ciência das normas aqui estabelecidas e se responsabiliza integralmente pelos atos de seus colaboradores designados para a execução do serviço. O(s) colaborador(es) abaixo assinado(s) declara(m) ter lido, compreendido e concordado com todas as condições deste Termo.", 180);
+            doc.text(declaracaoTexto, 15, y);
+            y += doc.getTextDimensions(declaracaoTexto).h + 5;
+
+            doc.text(`Local e Data: ${localData}`, 15, y); y += 10;
+            doc.text("Pela CONTRATADA:", 15, y); y += 6;
+            doc.text(`Nome da Empresa: ${nomeEmpresaContratada}`, 20, y); y += 6;
+            doc.text(`Nome do tecnico responsável da Contratada: ${nomeTecnicoResponsavel}`, 20, y); y += 6;
+            doc.text(`Nome do Colaborador que executará o serviço: ${nomeColaborador}`, 20, y); y += 6;
+            doc.text(`CPF/PASSAPORTE: ${cpfPassaporte}`, 20, y); y += 10;
+            doc.text("Assinatura:", 20, y); y += 5;
+
+            const imageDataContratada = canvasContratada.toDataURL('image/png');
+            doc.addImage(imageDataContratada, 'PNG', 20, y, 100, 50); y += 55;
+
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            
+            doc.text("Pela CONTRATANTE:", 15, y); y += 6;
+            doc.text(`Nome do Analista Responsável Pelo acompanhamento: ${nomeAnalistaContratante}`, 20, y); y += 10;
+            doc.text("Assinatura analista responsável:", 20, y); y += 5;
+
+            const imageDataAnalista = canvasAnalista.toDataURL('image/png');
+            doc.addImage(imageDataAnalista, 'PNG', 20, y, 100, 50); y += 55;
+
+            doc.save("termo-de-responsabilidade.pdf");
+        }
+    </script>
+</body>
+</html>
