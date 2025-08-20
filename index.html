@@ -291,9 +291,32 @@
             const nomeAnalistaContratante = document.getElementById('contratante-analista').value;
             const localData = document.getElementById('local-data').value;
 
+        function carregarLogo() {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.onload = () => resolve(img);
+                img.onerror = () => reject(new Error('Falha ao carregar o logo.'));
+                img.src = 'logo.png';
+            });
+        }
+
+        async function gerarPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            let logoImage;
+            try {
+                logoImage = await carregarLogo();
+            } catch (error) {
+                console.error(error);
+                alert("Não foi possível carregar a imagem do logo. O PDF será gerado sem ela.");
+                logoImage = null;
+            }
+            
             function adicionarCabecalho(doc) {
-                // Adiciona o logo a partir do arquivo local
-                doc.addImage('logo.png', 'PNG', 160, 10, 30, 15);
+                if (logoImage) {
+                    doc.addImage(logoImage, 'PNG', 160, 10, 30, 15);
+                }
                 doc.setFontSize(18);
                 doc.text("Termo de Responsabilidade e Confidencialidade", 10, 15);
                 doc.setFontSize(12);
@@ -390,3 +413,4 @@
     </script>
 </body>
 </html>
+
